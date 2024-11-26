@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="SPORTLIFE" />
+    <meta name="keywords" content="Activitar, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Olympic Touch</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="./index.html">
+            <strong href="logo">Olympic Touch</strong>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="nav-menu">
+            <nav class="mainmenu mobile-menu">
+              <ul>
+                <li class="active"><a href="./index.html">Главная</a></li>
+                <li><a href="./schedule.html">Выбери тренера</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Payment Section Begin -->
+    <section class="payment">
+      <div id="card-success" class="hidden">
+        <i class="fa fa-check"></i>
+        <p>Payment Successful!</p>
+      </div>
+      <div id="form-errors" class="hidden">
+        <i class="fa fa-exclamation-triangle"></i>
+        <p id="card-error">Card error</p>
+      </div>
+      <div id="form-container">
+        <div id="card-front">
+          <div id="shadow"></div>
+          <div id="image-container">
+            <span id="amount">paying: <strong></strong></span>
+            <span id="card-image"> </span>
+          </div>
+          <!--- end card image container --->
+
+          <label for="card-number"> Card Number </label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="1234 5678 9101 1112"
+            length="16"
+          />
+          <div id="cardholder-container">
+            <label for="card-holder">Card Holder </label>
+            <input
+              type="text"
+              id="card-holder"
+              placeholder="NOWACK VICTORIYA"
+            />
+          </div>
+          <!--- end card holder container --->
+          <div id="exp-container">
+            <label for="card-exp"> Expiration </label>
+            <input
+              style="color: rgb(3, 3, 3); font-size: 18px"
+              id="card-month"
+              type="text"
+              placeholder="MM"
+              length="2"
+            />
+            <input id="card-year" type="text" placeholder="YY" length="2" />
+          </div>
+          <div id="cvc-container">
+            <label for="card-cvc"> CVC/CVV</label>
+            <input
+              id="card-cvc"
+              placeholder="XXX"
+              type="text"
+              min-length="3"
+              max-length="4"
+            />
+            <p>Last 3 or 4 digits</p>
+          </div>
+          <!--- end CVC container --->
+          <!--- end exp container --->
+        </div>
+        <!--- end card front --->
+        <div id="card-back">
+          <div id="card-stripe"></div>
+        </div>
+        <!--- end card back --->
+        <input type="text" id="card-token" />
+        <button type="button" id="card-btn">Submit</button>
+      </div>
+      <!--- end form container --->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+      <script src="https://use.fontawesome.com/f1e0bf0cbc.js"></script>
+    </section>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

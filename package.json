@@ -1,0 +1,27 @@
+{
+  "name": "untitled",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "migrate": "npx prisma migrate dev --name ",
+    "studio": "npx prisma studio",
+    "seed": "node ./prisma/seed"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.10.0",
+    "cookie-parser": "~1.4.4",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^4.10.0"
+  }
+}
